@@ -21,16 +21,20 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val fruitList = arrayListOf<String>("リンゴ", "バナナ", "みかん")
+        //①棚に入れたい荷物を作る(リストを作成する)
 
-        val customAdapter = CustomAdapter(this, fruitList)
-        binding.listView.adapter = customAdapter
 
-        //リストに追加
-        fruitList.add("ブドウ")
+        //②作業員を用意すると同時に荷物を渡す(adapterをインスタンス化する)
 
-        //adapterに通知
-        customAdapter.notifyDataSetChanged()
+
+        //③作業員に荷物の更新を通知する(adapterへデータの更新を通知する)
+
+
+        //④荷物を追加する(リストに要素を追加)
+
+
+        //⑤作業員に荷物の更新を通知する(adapterへデータの更新を通知する)
+
 
 
     }

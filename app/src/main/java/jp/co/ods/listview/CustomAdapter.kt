@@ -30,7 +30,6 @@ class CustomAdapter(private val context: Context, private val fruitList: ArrayLi
         }
 
         val binding = ItemLayoutBinding.bind(view!!)
-
         binding.fruitNameText.text = fruitList[position]
 
         return view
